@@ -14,7 +14,7 @@ class ListAllUsersController {
       });
       return response.status(200).json(user);
     } catch (err) {
-      return response.status(400).json({ error: "Bad request" });
+      return response.status(400).json({ error: "User without permission" });
     }
   }
 }
